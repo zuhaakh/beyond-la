@@ -116,40 +116,6 @@ body[data-location] .story-pagination{padding-top:15px}
   .story-map{margin-bottom:20px}
 }
 
-/* Midnight palette: quiet gold, smoky violet, and a city after dark. */
-:root{color-scheme:dark;--paper:#11131b;--ink:#e8e3d8;--line:#343640}
-body{background:radial-gradient(ellipse at 85% 0%,#29233780,transparent 50%),radial-gradient(ellipse at 0% 70%,#1d333040,transparent 55%),var(--paper);background-attachment:fixed}
-::selection{background:#6a586f;color:#fff8e8}
-.logo{color:#eee8da}.logo-icon,.logo-dot{color:#c9ad78}
-.header-note{color:#aaa6ad}.header-note span{color:#c4a181}
-.location-link{background:#1b1d27;border-color:#3b3c46;color:#dedbd3;box-shadow:0 3px 12px #00000018}
-.location-link:hover,.location-link[aria-current=page]{background:var(--tint);border-color:var(--color);color:#f4eee2}
-.explorer,.story-page{background:#191c25;border-color:#3a3b44;box-shadow:0 18px 55px #00000030}
-.map-topline,.map-bottom,.story-map{background:#1b2229;border-color:#39434a}
-.map-topline,.map-topline>span:first-child,.map-bottom>span{color:#b1b8ab}
-.live-dot,.map-bottom i{background:#c7ae7f;box-shadow:0 0 9px #c7ae7f50}
-.map{background:#202831}
-.map-bottom button,.mini-map-footer{color:#bdc4b9}
-.pin-icon{border-color:#e3dccb;box-shadow:0 4px 14px #00000065}
-.pin-icon span{color:#1b2028}
-.pin-label{color:#eee9dd;background:#202530;border:1px solid #61606a;box-shadow:0 4px 12px #00000040}
-.mini-map .pin[aria-current=page] .pin-icon{box-shadow:0 0 0 4px #d4b77735,0 0 22px #d4b77740}
-.compass,.map-footnote,.map-caption{color:#b9c1b3}
-.map-controls{background:#202530;border:1px solid #515461;box-shadow:0 4px 16px #00000040}
-.map-controls button{color:#e3d3b3;border-color:#3c424c}
-.map-controls button:hover{background:#353644}
-.story-heading h1{color:#eee7d7}
-.back-to-map,.detail-area{color:#b5b9aa}
-.section-label{color:#c9b589}
-.story-space{color:#d0d0cd;line-height:1.9}
-.story-icon{border:1px solid var(--color)}
-.photo-placeholder{background:#20232e;border-color:#535363;color:#b6b1bb}
-.story-pagination{color:#adaeb2}
-.story-pagination a{border-color:#5d5548;color:#eee6d4}
-.story-pagination a:hover{border-color:var(--color)}
-footer{color:#a1a2a7}.footer-star{color:#c9ad78}
-button:focus-visible,a:focus-visible{outline-color:#ddc28a}
-
 /* Show the full portrait photos in the Walk of Fame album. */
 body[data-location="walk-of-fame"] .photo-grid{align-items:start}
 body[data-location="walk-of-fame"] .photo-grid img{display:block;width:100%;height:auto;object-fit:contain;border:1px solid var(--line)}
@@ -165,3 +131,11 @@ body[data-location="universal-studios"] .photo-grid img{display:block;width:100%
 /* Preserve the complete Rodeo Drive photographs. */
 body[data-location="rodeo-drive"] .photo-grid{align-items:start}
 body[data-location="rodeo-drive"] .photo-grid img{display:block;width:100%;height:auto;object-fit:contain;border:1px solid var(--line)}
+
+/* Keep each album directly beneath its map. */
+:root{color-scheme:light}
+.story-media{min-width:0;padding-bottom:24px}
+.story-media .story-map{position:static;margin:0}
+.story-media .section-label{margin:22px 0 12px}
+.story-space{line-height:1.9}
+@media(max-width:720px){.story-media{padding-bottom:20px}}

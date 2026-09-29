@@ -1,6 +1,6 @@
 # Beyond LA
 
-A dark illustrated Los Angeles map with four clickable locations, individual story pages, photo placeholders, and zoom controls. The map is stylized and not to scale.
+A pastel illustrated Los Angeles map with four clickable locations, individual story pages, photo placeholders, and zoom controls. The map is stylized and not to scale.
 
 Open `index.html` directly in your browser, or use the existing local server. No build, map service, or API key is required. Google Fonts are optional; fallback fonts work offline.
 
@@ -22,3 +22,5 @@ Each map pin and top navigation link opens its own HTML page: `walk-of-fame.html
 ## Hosting
 
 This is a static site ready for GitHub Pages. Publish the root of the `main` branch. The `.nojekyll` file disables Jekyll processing.
+
+On each location page, the photo album appears directly underneath the smaller map.
